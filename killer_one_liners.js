@@ -45,7 +45,7 @@ for (let key in details) {
 
 
 // 6.
-// Reverse a String a Number
+// Reverse a String 
 const str = "Pronto Peter";
 let reverse = [...str].reverse().join("");
 console.log(reverse);
