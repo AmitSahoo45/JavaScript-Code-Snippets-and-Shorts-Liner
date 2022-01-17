@@ -31,3 +31,6 @@ if (val) {
 
 // THIS CAN BE SHORTENED TO THIS
 val && thiswillexecute();
+
+// CONVERTING A LIST OF STRINGS TO NUMBERS
+const stringNumbers = ['101', '123.987', 'Amit', '9999999999'];
