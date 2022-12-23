@@ -74,3 +74,44 @@ console.log(arr.slice(0, 3))
 console.log(arr.slice(3))
 console.log(arr.slice(-3))
 console.log(arr.slice(-4,-1))
+
+/*
+How do you compare Object and Map in js
+In JavaScript, Object and Map are two different data structures 
+that can be used to store and manage data. 
+Both Object and Map have their own strengths and use cases, 
+and the choice between them depends on the specific requirements of your application.
+
+Here is a summary of the main differences between Object and Map:
+
+Keys: Object uses strings or symbols as keys, while Map can use any value (including objects) as a key.
+
+Iteration: Object does not have a built-in way to 
+iterate over its keys or values, while Map provides several 
+methods for iterating over its keys, values, and entries (key-value pairs).
+
+Memory usage: Map uses more memory than Object, 
+as it stores both the key and the value for each element.
+
+Performance: In general, Map has better performance than 
+Object for operations such as inserting, deleting, and looking up elements. 
+However, the performance difference may not be significant in most cases, 
+especially for small objects.
+
+Here is an example of how to use Object and Map in JavaScript:
+
+Copy code
+const obj = {
+  key1: 'value1',
+  key2: 'value2'
+};
+
+console.log(obj.key1);  // "value1"
+
+const map = new Map();
+map.set('key1', 'value1');
+map.set('key2', 'value2');
+
+console.log(map.get('key1')
+
+*/
