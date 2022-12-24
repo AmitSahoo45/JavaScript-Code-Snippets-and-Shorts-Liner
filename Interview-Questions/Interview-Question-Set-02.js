@@ -87,14 +87,17 @@ console.log(JSON.stringify(b) === JSON.stringify(a));  // true
 
 /*
 why is null===undefined --> false but null==undefined --> true in js?
+
 In JavaScript, the null and undefined values are used to represent
- the absence of a value or a missing value. However, they are distinct values with different meanings and behaviors.
+ the absence of a value or a missing value. However, they are distinct 
+ values with different meanings and behaviors.
 
 The null value represents a deliberate absence of an object value, 
 while the undefined value represents an uninitialized or missing value.
 
 The === operator is used to test for strict equality, 
-which means that the operands must be of the same type and have the same value in order for the test to return true.
+which means that the operands must be of the same type 
+and have the same value in order for the test to return true.
 
 The == operator, on the other hand, is used to test for loose equality, 
 which means that it performs type coercion (converting the operands to a common type) 
@@ -109,3 +112,7 @@ Here is an example that illustrates the difference between null and undefined:
 console.log(null === undefined);  // false
 console.log(null == undefined);   // true
 */
+
+console.log('1 - ',typeof null === undefined) // false
+console.log('2 - ',typeof null) // object
+console.log('3 - ',typeof undefined) // undefined
