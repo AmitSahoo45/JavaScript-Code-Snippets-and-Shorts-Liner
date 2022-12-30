@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+</head>
+
+<body>
+    <button id="setCookie">
+        Set Cookie
+    </button>
+    <button id="getCookie">
+        Get Cookie
+    </button>
+    <button id="setJWT">
+        Set JWT Cookie
+    </button>
+
+    <script>
+        const setCookie = document.getElementById('setCookie');
+        setCookie.addEventListener('click', () => {
+            document.cookie = 'name=John Doe';
+        });
+
+        const getCookie = document.getElementById('getCookie');
+        getCookie.addEventListener('click', () => {
+            console.log(document.cookie);
+        });
+
+        const setJWT = document.getElementById('setJWT');
+        setJWT.addEventListener('click', () => {
+            const JWT = 'eyJhbGciOi...';
+            document.cookie = `jwt=${JWT};HttpOnly;Secure;SameSite=Strict;`;
+        })
+
+    </script>
+</body>
+
+</html>
