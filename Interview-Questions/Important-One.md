@@ -16,3 +16,8 @@ the result will be Infinity or -Infinity depending on the sign of the number bei
 Unlike MAX_SAFE_INTEGER and MIN_SAFE_INTEGER, Infinity and -Infinity are not specific 
 integer values and are not subject to the same limitations on precision. 
 They are special values that represent the limit of what can be represented in JavaScript.
+
+#### 2. How does JavaScript store numbers in memory?
+JavaScript stores numbers in **64-bit floating-point format**, which is also used by the C programming language.
+or 
+**double precision floating point** numbers
